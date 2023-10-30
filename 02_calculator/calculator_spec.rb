@@ -79,21 +79,55 @@ end
 
 describe "#multiply" do
 
-  it "multiplies two numbers"
+  it "multiplies two numbers" do
+    # Use the expect syntax to check if the multiply method returns the correct value for two numbers
+    expect(multiply(2, 3)).to eq(6)
+    expect(multiply(5, -2)).to eq(-10)
+    expect(multiply(0, 10)).to eq(0)
+  end
 
-  it "multiplies several numbers"
-  
+  it "multiplies several numbers" do
+    # Use the expect syntax to check if the multiply method returns the correct value for several numbers
+    expect(multiply(2, 3, 4)).to eq(24)
+    expect(multiply(5, -2, 3)).to eq(-30)
+    expect(multiply(0, 10, 20)).to eq(0)
+  end
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+    # Use the expect syntax to check if the power method returns the correct value
+    expect(power(2, 3)).to eq(8)
+    expect(power(5, 2)).to eq(25)
+    expect(power(10, 0)).to eq(1)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
+# Write a test for the factorial method using RSpec
 describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+  it "computes the factorial of 0" do
+    # Use the expect syntax to check if the factorial method returns 1 for 0
+    expect(factorial(0)).to eq(1)
+  end
+
+  it "computes the factorial of 1" do
+    # Use the expect syntax to check if the factorial method returns 1 for 1
+    expect(factorial(1)).to eq(1)
+  end
+
+  it "computes the factorial of 2" do
+    # Use the expect syntax to check if the factorial method returns 2 for 2
+    expect(factorial(2)).to eq(2)
+  end
+
+  it "computes the factorial of 5" do
+    # Use the expect syntax to check if the factorial method returns 120 for 5
+    expect(factorial(5)).to eq(120)
+  end
+
+  it "computes the factorial of 10" do
+    # Use the expect syntax to check if the factorial method returns 3628800 for 10
+    expect(factorial(10)).to eq(3628800)
+  end
 end
