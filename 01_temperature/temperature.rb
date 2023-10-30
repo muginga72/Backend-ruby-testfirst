@@ -1,4 +1,5 @@
 #write your code here
+
 # Define the method ftoc that convert temperatures
 # it takes a temperature in Fahrenheit as an argument and returns in Celsius
 def ftoc(fahrenheit)
